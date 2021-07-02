@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Dashboard</title>
+    <!-- import font for google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" /> -->
+    <!-- cdn css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <!-- our css -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ! Navigation -->
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fas fa-apple-alt"></i> </span>
+              <span class="title"><h2>Monitoring</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-home" aria-hidden="true"></i>
+              </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="title">Customer</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa fa-comments"></i></span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa fa-hands-helping"></i></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-cog" aria-hidden="true"></i
+              ></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-lock" aria-hidden="true"></i
+              ></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-backward" aria-hidden="true"></i
+              ></span>
+              <span class="title">Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- ! end Navigation -->
+
+      <!-- ? Main -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here" />
+              <i class="fa fa-search"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img src="img/user.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1.000</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox"><i class="fas fa-eye"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">1.000</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox"><i class="fas fa-cart-plus"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">1.002</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox"><i class="fas fa-comment"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">$4.065</div>
+              <div class="cardName">Earnings</div>
+            </div>
+            <div class="iconBox"><i class="fas fa-dollar-sign"></i></div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="recentOrder">
+            <div class="cardHeader">
+              <h2>Order Terkini</h2>
+              <a href="" # class="btn">Lihat Semua</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Harga</td>
+                  <td>Pembayaran</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Pendingin</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status return">Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status delivered">Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status return">Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status return">Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>Barang</td>
+                  <td>120000</td>
+                  <td>Dibayar</td>
+                  <td><span class="status return">Transfer</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="recentCustomer">
+            <div class="cardHeader">
+              <h2>Pelanggan Terkini</h2>
+            </div>
+            <!-- ? tabel recent order -->
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px">
+                    <div class="images"><img src="" alt="" /></div>
+                  </td>
+                  <td>
+                    <h4>
+                      David <br />
+                      <span> Italy</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="images"><img src="" alt="" /></div>
+                  </td>
+                  <td>
+                    <h4>
+                      Shimen <br />
+                      <span> Mongolia</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="images"><img src="" alt="" /></div>
+                  </td>
+                  <td>
+                    <h4>
+                      Josh <br />
+                      <span> English</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="images"><img src="" alt="" /></div>
+                  </td>
+                  <td>
+                    <h4>
+                      Elka <br />
+                      <span> Netherland</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="images"><img src="" alt="" /></div>
+                  </td>
+                  <td>
+                    <h4>
+                      Mira <br />
+                      <span> Indonesia</span>
+                    </h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
